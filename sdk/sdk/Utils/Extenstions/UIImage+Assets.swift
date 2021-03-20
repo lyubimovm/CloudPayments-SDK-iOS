@@ -11,7 +11,7 @@ import UIKit
 
 extension UIImage {
     public class func named(_ name: String) -> UIImage {
-        return UIImage.init(named: name, in: Bundle.mainSdk, compatibleWith: nil)!
+        return UIImage.init(named: name, in: Bundle.module, compatibleWith: nil)!
     }
     
     public class var iconProgress: UIImage {

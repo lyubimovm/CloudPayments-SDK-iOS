@@ -27,6 +27,6 @@ extension UIColor {
     }
     
     private class func color(named colorName: String) -> UIColor! {
-        return UIColor.init(named: colorName, in: Bundle.mainSdk, compatibleWith: .none)
+        return UIColor.init(named: colorName, in: Bundle.module, compatibleWith: .none)
     }
 }

@@ -5,7 +5,6 @@
 //  Created by Sergey Iskhakov on 09.09.2020.
 //  Copyright © 2020 Cloudpayments. All rights reserved.
 //
-
 import Foundation
 import ObjectMapper
 

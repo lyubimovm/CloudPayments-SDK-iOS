@@ -1,3 +1,4 @@
+import Foundation
 import ObjectMapper
 
 public struct TransactionResponse: Mappable {

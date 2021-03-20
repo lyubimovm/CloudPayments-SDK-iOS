@@ -60,7 +60,7 @@ public class PaymentProcessForm: PaymentForm {
     
     @discardableResult
     public class func present(with configuration: PaymentConfiguration, cryptogram: String?, email: String?, state: State = .inProgress, from: UIViewController) -> PaymentForm? {
-        let storyboard = UIStoryboard.init(name: "PaymentForm", bundle: Bundle.mainSdk)
+        let storyboard = UIStoryboard.init(name: "PaymentForm", bundle: Bundle.module)
 
         guard let controller = storyboard.instantiateViewController(withIdentifier: "PaymentProcessForm") as? PaymentProcessForm else {
             return nil

@@ -31,7 +31,7 @@ class PaymentOptionsForm: PaymentForm, PKPaymentAuthorizationViewControllerDeleg
 
     @discardableResult
     public override class func present(with configuration: PaymentConfiguration, from: UIViewController) -> PaymentForm? {
-        let storyboard = UIStoryboard.init(name: "PaymentForm", bundle: Bundle.mainSdk)
+        let storyboard = UIStoryboard.init(name: "PaymentForm", bundle: Bundle.module)
 
         guard let controller = storyboard.instantiateViewController(withIdentifier: "PaymentOptionsForm") as? PaymentOptionsForm else {
             return nil
